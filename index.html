@@ -6,11 +6,11 @@
   <title>Spanish Online Learning Course</title>
   <style>
     body {
-      background-color: #add8e6; /* light blue */
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('tutoring.jpg') no-repeat center center fixed; 
+      background-size: cover;
     }
-    /* Navigation bar */
     nav {
       background-color: darkred;
       padding: 15px 30px;
@@ -28,62 +28,36 @@
     nav a:hover {
       color: yellow;
     }
-    /* Main content */
     .content {
-      text-align: center;
-      padding: 50px;
+      display: flex;
+      justify-content: flex-end; /* moves content to the right */
+      align-items: flex-start; /* moves content to the top */
+      padding: 40px;
+      height: calc(100vh - 60px); /* full screen minus navbar */
     }
     .content-box {
-      background-color: yellow;
-      color: red;
+      background-color: rgba(255, 255, 150, 0.9); /* light yellow, slightly transparent */
+      color: #333;
       padding: 20px 40px;
       border-radius: 12px;
-      display: inline-block;
-      max-width: 700px;
+      max-width: 400px;
       line-height: 1.6;
-    }
-    h1 {
-      margin-top: 0;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: red;
-      color: gold;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .button:hover {
-      background-color: darkred;
-      color: yellow;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  
   <nav>
     <a href="index.html">Introduction</a>
     <a href="lesson1.html">Lesson 1</a>
     <a href="lesson2.html">Lesson 2</a>
     <a href="lesson3.html">Lesson 3</a>
-    <a href="lesson4.html">Lesson 4</a>
     <a href="contact.html">Contact Us</a>
   </nav>
-  
   <div class="content">
     <div class="content-box">
-      <img src="spanish-flag.png" alt="Spanish Flag" style="max-width:200px; margin-bottom:20px;">
       <h1>Welcome to Learning Spanish Online 👋</h1>
-      <p>
-        Learning Spanish can be difficult and takes time and dedication to reach a high level, 
-        but do not worry — in this simple and easy-to-navigate course, your Spanish level 
-        will improve in just a few lessons!
-      </p>
-      <a href="lesson1.html" class="button">Start Learning</a>
+      <p>Learning Spanish can be difficult and takes time and dedication to reach a high level — but do not worry! In this simple and easy-to-navigate course, your Spanish level will improve in just a few lessons!</p>
     </div>
   </div>
 </body>
