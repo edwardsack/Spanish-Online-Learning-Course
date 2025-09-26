@@ -8,10 +8,32 @@
     body {
       background-color: #add8e6; /* light blue */
       font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    /* Navigation bar */
+    nav {
+      background-color: darkred;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    nav a {
+      color: gold;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    /* Main content */
+    .content {
       text-align: center;
       padding: 50px;
     }
-    .content {
+    .content-box {
       background-color: yellow;
       color: red;
       padding: 20px 40px;
@@ -42,16 +64,27 @@
   </style>
 </head>
 <body>
+  
+  <nav>
+    <a href="index.html">Introduction</a>
+    <a href="lesson1.html">Lesson 1</a>
+    <a href="lesson2.html">Lesson 2</a>
+    <a href="lesson3.html">Lesson 3</a>
+    <a href="lesson4.html">Lesson 4</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  
   <div class="content">
-    <img src="spanish-flag.png" alt="Spanish Flag" style="max-width:200px; margin-bottom:20px;">
-    
-    <h1>Welcome to Learning Spanish Online 👋</h1>
-    <p>
-      Learning Spanish can be difficult and takes time and dedication to reach a high level, 
-      but do not worry — in this simple and easy-to-navigate course, your Spanish level 
-      will improve in just a few lessons!
-    </p>
-    <a href="lesson1.html" class="button">Start Learning</a>
+    <div class="content-box">
+      <img src="spanish-flag.png" alt="Spanish Flag" style="max-width:200px; margin-bottom:20px;">
+      <h1>Welcome to Learning Spanish Online 👋</h1>
+      <p>
+        Learning Spanish can be difficult and takes time and dedication to reach a high level, 
+        but do not worry — in this simple and easy-to-navigate course, your Spanish level 
+        will improve in just a few lessons!
+      </p>
+      <a href="lesson1.html" class="button">Start Learning</a>
+    </div>
   </div>
 </body>
 </html>
