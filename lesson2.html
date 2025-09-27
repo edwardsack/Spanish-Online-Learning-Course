@@ -8,8 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-color: lightblue; /* same as Lesson 1 */
       color: #333;
     }
 
@@ -25,15 +24,13 @@
     }
 
     nav .logo {
-      height: 140px;     /* bigger logo */
-      margin-left: 40px; /* shift right */
-      margin-top: 40px;  /* push logo down */
+      height: 140px;
+      margin-left: 40px;
+      margin-top: 40px;
       position: absolute;
       top: 0;
       left: 0;
     }
-
-    /* Dropdown styles */
     .dropdown {
       position: relative;
       display: inline-block;
@@ -72,7 +69,6 @@
       background-color: #ddd;
     }
 
-    /* Hover effect (desktop) */
     .dropdown:hover .dropdown-content {
       display: block;
     }
@@ -80,8 +76,6 @@
     .dropdown:hover .dropbtn {
       background-color: darkred;
     }
-
-    /* Content box */
     .content {
       background-color: yellow;
       max-width: 800px;
@@ -91,7 +85,7 @@
       opacity: 0.95;
     }
 
-    h1 {
+    h1, h2 {
       color: red;
     }
 
@@ -115,7 +109,6 @@
       color: #d9534f;
     }
 
-    /* Extra CSS for click dropdown */
     .dropdown-content.show {
       display: block;
     }
@@ -138,6 +131,7 @@
   </nav>
 
   <div class="content">
+    <!-- LESSON 2 CONTENT (same as before) -->
     <h1>Day 2: Describing Things + Asking <em>¿Qué es eso?</em></h1>
     <p><strong>Estimated Time</strong>: 30 minutes</p>
     <p><strong>Objective</strong>: Describe objects using adjectives and ask <em>¿Qué es eso?</em> (“What is that?”).</p>
@@ -150,8 +144,6 @@
     </ul>
 
     <h2>2. Grammar Focus – Adjectives + <em>¿Qué es eso?</em></h2>
-    <p><strong>Adjective Agreement</strong>: Adjectives match the noun’s gender and number and follow the noun.</p>
-
     <table>
       <tr><th>Article</th><th>Noun</th><th>Adjective</th><th>English</th></tr>
       <tr><td>el</td><td>hotel</td><td>grande</td><td>the big hotel</td></tr>
@@ -168,14 +160,12 @@
     <p>Reuse: <em>el hotel, la playa, la maleta, la cerveza, la habitación</em>. New question: <em>¿Qué es eso?</em></p>
 
     <h2>4. Listening Prompt</h2>
-    <p>Transcript:</p>
     <ul>
       <li><em>El hotel grande. La maleta pequeña. Las cervezas frías.</em></li>
       <li><em>¿Qué es eso?</em> → Pause → <em>Es una playa bonita.</em></li>
     </ul>
 
     <h2>5. Reading + Matching Task</h2>
-    <p>Match:</p>
     <ul>
       <li><em>una playa bonita</em></li>
       <li><em>un hotel grande</em></li>
@@ -190,7 +180,6 @@
     </ul>
 
     <h2>7. Writing Practice</h2>
-    <p>Translate:</p>
     <ul>
       <li>The pretty beach → <em>La playa bonita</em></li>
       <li>A big hotel → <em>Un hotel grande</em></li>
@@ -221,12 +210,10 @@
   </div>
 
   <script>
-    // Toggle dropdown for click/tap (mobile support)
     function toggleMenu() {
       document.getElementById("menuContent").classList.toggle("show");
     }
 
-    // Close dropdown if clicked outside
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
