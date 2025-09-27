@@ -8,19 +8,21 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('tutoring.jpg') no-repeat center center fixed; 
+      background: url('tutoring.jpg') no-repeat center center fixed;
       background-size: cover;
     }
     nav {
       background-color: darkred;
       padding: 10px 30px;
       display: flex;
-      justify-content: space-between; /* logo on left, links on right */
+      justify-content: space-between; /* logo left, links right */
       align-items: center;
+      height: 130px; /* make navbar taller to fit logo */
     }
-    nav img {
-      height: 50px; /* adjust size of logo */
-      border-radius: 8px;
+    nav .logo {
+      height: 120px; /* make logo bigger */
+      margin-left: 40px; /* push slightly to the right */
+      border-radius: 12px; /* optional rounded edges */
     }
     nav .links {
       display: flex;
@@ -30,7 +32,7 @@
       text-decoration: none;
       margin-left: 20px;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 18px;
       transition: 0.3s;
     }
     nav .links a:hover {
@@ -38,13 +40,13 @@
     }
     .content {
       display: flex;
-      justify-content: flex-end; /* moves content to the right */
-      align-items: flex-start;   /* moves content to the top */
+      justify-content: flex-end; /* moves yellow box to the right */
+      align-items: flex-start;   /* moves it to the top */
       padding: 40px;
-      height: calc(100vh - 70px); /* full screen minus navbar */
+      height: calc(100vh - 130px); /* full height minus navbar */
     }
     .content-box {
-      background-color: rgba(255, 255, 150, 0.9); /* light yellow, slightly transparent */
+      background-color: rgba(255, 255, 150, 0.9); /* light yellow with transparency */
       color: #333;
       padding: 20px 40px;
       border-radius: 12px;
@@ -56,7 +58,9 @@
 </head>
 <body>
   <nav>
-    <img src="logo.png" alt="Site Logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Site Logo" class="logo">
+    </a>
     <div class="links">
       <a href="index.html">Introduction</a>
       <a href="lesson1.html">Lesson 1</a>
