@@ -31,9 +31,7 @@
       position: absolute;
       top: 0;
       left: 0;
-    }
 
-    /* Dropdown styles */
     .dropdown {
       position: relative;
       display: inline-block;
@@ -71,8 +69,6 @@
     .dropdown-content a:hover {
       background-color: #ddd;
     }
-
-    /* Hover effect (desktop) */
     .dropdown:hover .dropdown-content {
       display: block;
     }
@@ -80,8 +76,6 @@
     .dropdown:hover .dropbtn {
       background-color: darkred;
     }
-
-    /* Content box */
     .content {
       background-color: yellow;
       max-width: 800px;
@@ -94,8 +88,6 @@
     h1 {
       color: red;
     }
-
-    /* Extra CSS for click dropdown */
     .dropdown-content.show {
       display: block;
     }
@@ -104,7 +96,7 @@
 <body>
   <nav>
     <img src="logo.png" alt="Site Logo" class="logo">
-
+}
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleMenu()">Navigation Menu</button>
       <div class="dropdown-content" id="menuContent">
@@ -123,12 +115,9 @@
   </div>
 
   <script>
-    // Toggle dropdown for click/tap (mobile support)
     function toggleMenu() {
       document.getElementById("menuContent").classList.toggle("show");
     }
-
-    // Close dropdown if clicked outside
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
