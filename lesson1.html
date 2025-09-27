@@ -3,84 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson 1 - Articles</title>
+  <title>Lesson 1 - Spanish Online Learning Course</title>
   <style>
     body {
-      background-color: #fff8dc; /* light cream */
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightblue; /* same as Lesson 2 */
+      color: #333;
     }
+
     nav {
-      background-color: darkred;
-      padding: 15px 30px;
+      background-color: red;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+      padding: 5px 20px;
+      height: 50px;
+      position: relative;
+      z-index: 2;
     }
-    nav a {
-      color: gold;
-      text-decoration: none;
-      margin-left: 20px;
+
+    nav .logo {
+      height: 140px;     /* larger logo */
+      margin-left: 40px; /* push right */
+      margin-top: 40px;  /* push down */
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 40px;
+    }
+
+    .dropbtn {
+      background-color: red;
+      color: white;
       font-weight: bold;
+      padding: 10px 15px;
       font-size: 16px;
-      transition: 0.3s;
+      border: none;
+      cursor: pointer;
     }
-    nav a:hover {
-      color: yellow;
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 6px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: darkred;
     }
     .content {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.6;
+      background-color: yellow;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0.95;
     }
-    h1, h2, h3 {
-      color: darkred;
-      text-align: center;
+
+    h1, h2 {
+      color: red;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 20px 0;
+      margin: 15px 0;
     }
+
     table, th, td {
-      border: 1px solid #666;
-    }
-    th, td {
-      padding: 10px;
+      border: 1px solid #333;
+      padding: 8px;
       text-align: center;
     }
+
     th {
-      background-color: #fafad2;
+      background-color: #f2f2f2;
     }
-    .highlight {
-      background-color: #fafad2;
-      padding: 10px;
-      border-radius: 8px;
+
+    strong {
+      color: #d9534f;
+    }
+
+    .dropdown-content.show {
+      display: block;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Introduction</a>
-    <a href="lesson1.html">Lesson 1</a>
-    <a href="lesson2.html">Lesson 2</a>
-    <a href="lesson3.html">Lesson 3</a>
-    <a href="contact.html">Contact Us</a>
+    <img src="logo.png" alt="Site Logo" class="logo">
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleMenu()">Navigation Menu</button>
+      <div class="dropdown-content" id="menuContent">
+        <a href="index.html">Introduction</a>
+        <a href="lesson1.html">Lesson 1</a>
+        <a href="lesson2.html">Lesson 2</a>
+        <a href="lesson3.html">Lesson 3</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
   </nav>
+
   <div class="content">
     <h1>Day 1: Articles — Your First Step to Speaking Spanish with Confidence</h1>
-    <p><b>🕒 Estimated Time:</b> 30 minutes</p>
-    <p><b>🎯 Objective:</b> Understand and use Spanish definite and indefinite articles in real travel situations.</p>
+    <p><strong>Estimated Time</strong>: 30 minutes</p>
+    <p><strong>Objective</strong>: Understand and use Spanish definite and indefinite articles in real travel situations.</p>
 
-    <h2>🎥 1. Intro Video Placeholder (You)</h2>
-    <div class="highlight">
-      <ul>
-        <li>Explain what articles are, how they differ from English, and why we start here.</li>
-        <li>Emphasize that every sentence begins with knowing the “what” and “how many.”</li>
-      </ul>
-    </div>
+    <h2>1. Intro Video Placeholder</h2>
+    <ul>
+      <li>Explain what articles are, how they differ from English, and why we start here.</li>
+      <li>Emphasize that every sentence begins with knowing the “what” and “how many.”</li>
+    </ul>
 
-    <h2>🧠 2. Grammar Focus – Articles: "The" and "A"</h2>
+    <h2>2. Grammar Focus – Articles</h2>
     <table>
       <tr><th>English</th><th>Spanish (Singular)</th><th>Spanish (Plural)</th></tr>
       <tr><td>the (masculine)</td><td>el hotel</td><td>los hoteles</td></tr>
@@ -88,14 +149,10 @@
       <tr><td>a / an (masculine)</td><td>un taxi</td><td>unos taxis</td></tr>
       <tr><td>a / an (feminine)</td><td>una cerveza</td><td>unas cervezas</td></tr>
     </table>
-    <p><b>Key Rule:</b> Articles match the gender (masculine/feminine) and number (singular/plural) of the noun.</p>
-    <ul>
-      <li><i>el hotel</i> ✅ (masculine, singular)</li>
-      <li><i>las playas</i> ✅ (feminine, plural)</li>
-    </ul>
-    <p><b>Mini-Rule:</b> Most nouns ending in <i>-o</i> are masculine, <i>-a</i> are feminine, but exceptions exist (e.g., <i>el mapa</i>).</p>
+    <p><strong>Key Rule:</strong> Articles match gender and number of the noun.</p>
+    <p><em>el hotel</em> ✅ (masc, singular) — <em>las playas</em> ✅ (fem, plural)</p>
 
-    <h2>📚 3. Vocabulary List – Travel Nouns (10)</h2>
+    <h2>3. Vocabulary – Travel Nouns</h2>
     <table>
       <tr><th>Spanish</th><th>English</th></tr>
       <tr><td>el hotel</td><td>the hotel</td></tr>
@@ -107,70 +164,55 @@
       <tr><td>el taxi</td><td>the taxi</td></tr>
       <tr><td>la habitación</td><td>the room</td></tr>
       <tr><td>los billetes</td><td>the tickets</td></tr>
-      <tr><td>las vacaciones</td><td>the holidays/vacation</td></tr>
+      <tr><td>las vacaciones</td><td>the holidays</td></tr>
     </table>
-    <p><b>Tip:</b> Memorize nouns with their article to learn gender.</p>
 
-    <h2>🎧 4. Listening Prompt (You Provide)</h2>
-    <p><b>Transcript:</b></p>
+    <h2>4. Listening Prompt</h2>
     <ul>
-      <li>Say: <i>“el hotel,” “la playa,” “una cerveza,”</i> etc.</li>
-      <li>Ask: <i>“¿Una habitación?”</i> → Pause for student to repeat: <i>Una habitación.</i></li>
-    </ul>
-    <p><b>Goal:</b> Associate article + noun by ear and repeat confidently.</p>
-
-    <h2>📖 5. Reading + Identification Exercise</h2>
-    <p>Match the Spanish to the image (images not included yet):</p>
-    <ul>
-      <li><i>el hotel</i></li>
-      <li><i>la playa</i></li>
-      <li><i>una cerveza</i></li>
-      <li><i>el taxi</i></li>
-      <li><i>la maleta</i></li>
+      <li>Say: <em>“el hotel,” “la playa,” “una cerveza,”</em></li>
+      <li>Ask: <em>“¿Una habitación?”</em> → Pause → Student: <em>Una habitación</em></li>
     </ul>
 
-    <h2>🗣️ 6. Speaking Prompt – Simulated Hotel Check-In</h2>
-    <p>Repeat after you:</p>
+    <h2>5. Reading + Identification</h2>
+    <p>Match the Spanish to the image: <em>el hotel, la playa, una cerveza, el taxi, la maleta</em></p>
+
+    <h2>6. Speaking Prompt</h2>
     <ul>
-      <li><i>¿Una habitación?</i> → <i>Una habitación.</i></li>
-      <li><i>¿El pasaporte?</i> → <i>El pasaporte.</i></li>
-      <li><i>¿Una maleta?</i> → <i>Una maleta.</i></li>
-      <li><i>¿El hotel?</i> → <i>El hotel.</i></li>
+      <li><em>¿Una habitación?</em> → <em>Una habitación.</em></li>
+      <li><em>¿El pasaporte?</em> → <em>El pasaporte.</em></li>
+      <li><em>¿Una maleta?</em> → <em>Una maleta.</em></li>
+      <li><em>¿El hotel?</em> → <em>El hotel.</em></li>
     </ul>
 
-    <h2>✍️ 7. Optional Writing Practice</h2>
-    <p>Translate to Spanish:</p>
+    <h2>7. Writing Practice</h2>
     <ul>
-      <li>The beach → <i>La playa</i></li>
-      <li>A beer → <i>Una cerveza</i></li>
-      <li>The tickets → <i>Los billetes</i></li>
-      <li>A suitcase → <i>Una maleta</i></li>
-      <li>The holidays → <i>Las vacaciones</i></li>
+      <li>The beach → <em>La playa</em></li>
+      <li>A beer → <em>Una cerveza</em></li>
+      <li>The tickets → <em>Los billetes</em></li>
+      <li>A suitcase → <em>Una maleta</em></li>
+      <li>The holidays → <em>Las vacaciones</em></li>
     </ul>
 
-    <h2>🎯 8. Recap Challenge</h2>
-    <p>Hold up photos/flashcards (e.g., beach, hotel). Student responds aloud with correct article + noun (e.g., <i>la playa</i>).</p>
-
-    <h2>✅ All the Words You Now Know in Spanish</h2>
-    <table>
-      <tr><th>Spanish</th><th>English</th><th>Notes</th></tr>
-      <tr><td>el</td><td>the (masc sg)</td><td>definite article</td></tr>
-      <tr><td>la</td><td>the (fem sg)</td><td>definite article</td></tr>
-      <tr><td>los</td><td>the (masc pl)</td><td>definite article</td></tr>
-      <tr><td>las</td><td>the (fem pl)</td><td>definite article</td></tr>
-      <tr><td>un</td><td>a/an (masc sg)</td><td>indefinite article</td></tr>
-      <tr><td>una</td><td>a/an (fem sg)</td><td>indefinite article</td></tr>
-      <tr><td>el hotel</td><td>the hotel</td><td>masc noun</td></tr>
-      <tr><td>la playa</td><td>the beach</td><td>fem noun</td></tr>
-      <tr><td>el pasaporte</td><td>the passport</td><td>masc noun</td></tr>
-      <tr><td>la maleta</td><td>the suitcase</td><td>fem noun</td></tr>
-      <tr><td>el restaurante</td><td>the restaurant</td><td>masc noun</td></tr>
-      <tr><td>la cerveza</td><td>the beer</td><td>fem noun</td></tr>
-      <tr><td>el taxi</td><td>the taxi</td><td>masc noun</td></tr>
-      <tr><td>la habitación</td><td>the room</td><td>fem noun</td></tr>
-      <tr><td>los billetes</td><td>the tickets</td><td>masc pl noun</td></tr>
-      <tr><td>las vacaciones</td><td>the holidays/vacation</td><td>fem pl noun</td></tr>
-    </table>
+    <h2>8. Recap Challenge</h2>
+    <p>Show flashcards (e.g., beach, hotel). Student responds: <em>la playa, el hotel</em>, etc.</p>
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menuContent").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 </body>
 </html>
