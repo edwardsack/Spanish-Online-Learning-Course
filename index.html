@@ -13,11 +13,19 @@
     }
     nav {
       background-color: darkred;
-      padding: 15px 30px;
+      padding: 10px 30px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between; /* logo on left, links on right */
+      align-items: center;
     }
-    nav a {
+    nav img {
+      height: 50px; /* adjust size of logo */
+      border-radius: 8px;
+    }
+    nav .links {
+      display: flex;
+    }
+    nav .links a {
       color: gold;
       text-decoration: none;
       margin-left: 20px;
@@ -25,15 +33,15 @@
       font-size: 16px;
       transition: 0.3s;
     }
-    nav a:hover {
+    nav .links a:hover {
       color: yellow;
     }
     .content {
       display: flex;
       justify-content: flex-end; /* moves content to the right */
-      align-items: flex-start; /* moves content to the top */
+      align-items: flex-start;   /* moves content to the top */
       padding: 40px;
-      height: calc(100vh - 60px); /* full screen minus navbar */
+      height: calc(100vh - 70px); /* full screen minus navbar */
     }
     .content-box {
       background-color: rgba(255, 255, 150, 0.9); /* light yellow, slightly transparent */
@@ -48,11 +56,14 @@
 </head>
 <body>
   <nav>
-    <a href="index.html">Introduction</a>
-    <a href="lesson1.html">Lesson 1</a>
-    <a href="lesson2.html">Lesson 2</a>
-    <a href="lesson3.html">Lesson 3</a>
-    <a href="contact.html">Contact Us</a>
+    <img src="logo.png" alt="Site Logo">
+    <div class="links">
+      <a href="index.html">Introduction</a>
+      <a href="lesson1.html">Lesson 1</a>
+      <a href="lesson2.html">Lesson 2</a>
+      <a href="lesson3.html">Lesson 3</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
   </nav>
   <div class="content">
     <div class="content-box">
