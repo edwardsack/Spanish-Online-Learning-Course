@@ -8,77 +8,138 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('tutoring.jpg') no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: #333;
     }
+
     nav {
-      background-color: darkred;
-      padding: 5px 30px; /* thinner red bar */
+      background-color: red;
       display: flex;
-      justify-content: flex-end; /* only align links to the right */
+      justify-content: flex-end;
       align-items: center;
-      height: 60px; /* reduced navbar height */
-      position: relative; /* allows logo to overlap */
-      z-index: 1;
-    }
-    nav .logo {
-      height: 120px; /* bigger logo */
-      position: absolute;
-      top: -30px; /* pull it above the red bar */
-      left: 30px; /* push slightly from the left */
-      border-radius: 12px; /* optional rounded edges */
+      padding: 5px 20px;
+      height: 50px;
+      position: relative;
       z-index: 2;
     }
-    nav .links {
-      display: flex;
+
+    nav .logo {
+      height: 140px;     /* bigger logo */
+      margin-left: 40px; /* shift right */
+      margin-top: 40px;  /* push logo down */
+      position: absolute;
+      top: 0;
+      left: 0;
     }
-    nav .links a {
-      color: gold;
-      text-decoration: none;
-      margin-left: 20px;
+
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 40px;
+    }
+
+    .dropbtn {
+      background-color: red;
+      color: white;
       font-weight: bold;
-      font-size: 18px;
-      transition: 0.3s;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
     }
-    nav .links a:hover {
-      color: yellow;
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 6px;
     }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Hover effect (desktop) */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: darkred;
+    }
+
+    /* Content box */
     .content {
-      display: flex;
-      justify-content: flex-end; /* moves yellow box to the right */
-      align-items: flex-start;   /* moves it to the top */
-      padding: 40px;
-      height: calc(100vh - 60px); /* adjust to thinner navbar */
+      background-color: yellow;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0.95;
     }
-    .content-box {
-      background-color: rgba(255, 255, 150, 0.9); /* light yellow with transparency */
-      color: #333;
-      padding: 20px 40px;
-      border-radius: 12px;
-      max-width: 400px;
-      line-height: 1.6;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+
+    h1 {
+      color: red;
+    }
+
+    /* Extra CSS for click dropdown */
+    .dropdown-content.show {
+      display: block;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">
-      <img src="logo.png" alt="Site Logo" class="logo">
-    </a>
-    <div class="links">
-      <a href="index.html">Introduction</a>
-      <a href="lesson1.html">Lesson 1</a>
-      <a href="lesson2.html">Lesson 2</a>
-      <a href="lesson3.html">Lesson 3</a>
-      <a href="contact.html">Contact Us</a>
+    <img src="logo.png" alt="Site Logo" class="logo">
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleMenu()">Navigation Menu</button>
+      <div class="dropdown-content" id="menuContent">
+        <a href="index.html">Introduction</a>
+        <a href="lesson1.html">Lesson 1</a>
+        <a href="lesson2.html">Lesson 2</a>
+        <a href="lesson3.html">Lesson 3</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
     </div>
   </nav>
+
   <div class="content">
-    <div class="content-box">
-      <h1>Welcome to Learning Spanish Online 👋</h1>
-      <p>Learning Spanish can be difficult and takes time and dedication to reach a high level — but do not worry! In this simple and easy-to-navigate course, your Spanish level will improve in just a few lessons!</p>
-    </div>
+    <h1>Welcome to Learning Spanish Online 👋</h1>
+    <p>Learning Spanish can be difficult and takes time and dedication to reach a high level but do not worry, in this simple and easy to navigate course, your Spanish level will improve in just a few lessons!</p>
   </div>
+
+  <script>
+    // Toggle dropdown for click/tap (mobile support)
+    function toggleMenu() {
+      document.getElementById("menuContent").classList.toggle("show");
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 </body>
 </html>
