@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spanish Online Learning Course</title>
+  <title>Spanish Online Learning Course - Introduction</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
+      background: url("background.jpg") no-repeat center center fixed;
       background-size: cover;
       color: #333;
     }
@@ -25,13 +25,13 @@
     }
 
     nav .logo {
-      height: 140px;     /* bigger logo */
-      margin-left: 40px; /* shift right */
-      margin-top: 40px;  /* push logo down */
+      height: 140px;     
+      margin-left: 40px; 
+      margin-top: 40px;  
       position: absolute;
       top: 0;
       left: 0;
-
+    }
     .dropdown {
       position: relative;
       display: inline-block;
@@ -69,6 +69,7 @@
     .dropdown-content a:hover {
       background-color: #ddd;
     }
+
     .dropdown:hover .dropdown-content {
       display: block;
     }
@@ -85,9 +86,10 @@
       opacity: 0.95;
     }
 
-    h1 {
+    h1, h2 {
       color: red;
     }
+
     .dropdown-content.show {
       display: block;
     }
@@ -96,7 +98,7 @@
 <body>
   <nav>
     <img src="logo.png" alt="Site Logo" class="logo">
-}
+
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleMenu()">Navigation Menu</button>
       <div class="dropdown-content" id="menuContent">
@@ -109,15 +111,24 @@
     </div>
   </nav>
 
+  <!-- First yellow box: intro -->
   <div class="content">
-    <h1>Welcome to Learning Spanish Online 👋</h1>
-    <p>Learning Spanish can be difficult and takes time and dedication to reach a high level but do not worry, in this simple and easy to navigate course, your Spanish level will improve in just a few lessons!</p>
+    <h1>Welcome to Your Spanish Online Learning Course</h1>
+    <p>This course is designed to give you practical Spanish for real travel situations.  
+    Each lesson is short, interactive, and focused on everyday words and phrases you’ll actually use.  
+    Start with Lesson 1 to begin your journey!</p>
+  </div>
+  <div class="content">
+    <h2>More Coming Soon...</h2>
+    <p>This section is reserved for additional introduction material, updates, or resources.  
+    Content will be added here later.</p>
   </div>
 
   <script>
     function toggleMenu() {
       document.getElementById("menuContent").classList.toggle("show");
     }
+
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
