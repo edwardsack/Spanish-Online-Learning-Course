@@ -3,190 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson 2 - Describing Things</title>
+  <title>Lesson 2 - Subject Pronouns</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #87CEEB; /* light blue background */
-      color: red; /* red text */
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
     }
-
-    nav {
-      background-color: red;
+    header {
+      background-color: rgba(255, 0, 0, 0.85);
       padding: 10px;
-      text-align: right;
+      display: flex;
+      align-items: center;
       position: relative;
     }
-
-    nav .logo {
-      height: 140px;
-      margin-left: 40px;
-      margin-top: 40px;
-      position: absolute;
-      top: 0;
-      left: 0;
+    header img {
+      height: 80px;
+      margin-right: 20px;
+      cursor: pointer;
     }
-
+    nav {
+      margin-left: auto;
+      position: relative;
+    }
     nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      display: inline-block;
-      position: relative;
     }
-
     nav ul li {
       display: inline-block;
       position: relative;
     }
-
     nav ul li a {
-      color: yellow;
-      padding: 10px 15px;
       text-decoration: none;
+      color: white;
+      padding: 10px 15px;
       display: block;
     }
-
-    nav ul li a:hover {
-      background-color: darkred;
+    nav ul li:hover > ul {
+      display: block;
     }
-
-    nav ul li ul {
+    nav ul ul {
       display: none;
       position: absolute;
-      background-color: red;
-      padding: 0;
-      min-width: 160px;
-      z-index: 1000;
+      top: 100%;
+      left: 0;
+      background-color: rgba(255, 0, 0, 0.9);
+      min-width: 180px;
     }
-
-    nav ul li:hover ul {
+    nav ul ul li {
       display: block;
     }
-
-    nav ul li ul li {
-      display: block;
-    }
-
-    .content {
+    .content-box {
       background-color: yellow;
-      margin: 50px auto;
+      max-width: 900px;
+      margin: 40px auto;
       padding: 20px;
       border-radius: 10px;
-      width: 80%;
-      max-width: 900px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">
-      <img src="logo.png" alt="Logo" class="logo">
-    </a>
-    <ul>
-      <li><a href="#">Navigation Menu</a>
-        <ul>
-          <li><a href="index.html">Introduction</a></li>
-          <li><a href="lesson1.html">Lesson 1</a></li>
-          <li><a href="lesson2.html">Lesson 2</a></li>
-          <li><a href="lesson3.html">Lesson 3</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="#">Navigation Menu</a>
+          <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="lesson1.html">Lesson 1</a></li>
+            <li><a href="lesson2.html">Lesson 2</a></li>
+            <li><a href="lesson3.html">Lesson 3</a></li>
+            <li><a href="lesson4.html">Lesson 4</a></li>
+            <li><a href="lesson5.html">Lesson 5</a></li>
+            <li><a href="lesson6.html">Lesson 6</a></li>
+            <li><a href="lesson7.html">Lesson 7</a></li>
+            <li><a href="lesson8.html">Lesson 8</a></li>
+            <li><a href="lesson9.html">Lesson 9</a></li>
+            <li><a href="lesson10.html">Lesson 10</a></li>
+            <li><a href="lesson11.html">Lesson 11</a></li>
+            <li><a href="lesson12.html">Lesson 12</a></li>
+            <li><a href="lesson13.html">Lesson 13</a></li>
+            <li><a href="lesson14.html">Lesson 14</a></li>
+            <li><a href="lesson15.html">Lesson 15</a></li>
+            <li><a href="lesson16.html">Lesson 16</a></li>
+            <li><a href="lesson17.html">Lesson 17</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="content">
-    <h1>Day 2: Describing Things + Asking <em>What is that?</em></h1>
-    <p><strong>Estimated Time</strong>: 30 minutes</p>
-    <p><strong>Objective</strong>: Describe objects using adjectives and ask <em>¿Qué es eso?</em> (<em>What is that?</em>).</p>
+  <div class="content-box">
+    <h1>Day 2: Subject Pronouns — Talking About People</h1>
+    <p><strong>Estimated Time:</strong> 35 minutes</p>
+    <p><strong>Objective:</strong> Learn to identify and use Spanish subject pronouns (I, you, he, she, we, they) in real conversations.</p>
 
-    <h2>1. Intro Video Placeholder (You)</h2>
-    <ul>
-      <li>Explain why descriptions are useful for travelers (e.g., describing lost luggage).</li>
-      <li>Introduce <em>¿Qué es eso?</em> for asking about objects.</li>
-      <li>Note: <em>es</em> is from the irregular verb <em>ser</em> (full conjugation on Day 8).</li>
-    </ul>
+    <h3>1. Intro Explanation (Video Placeholder)</h3>
+    <p>Explain that subject pronouns tell us who is doing the action. In Spanish, these pronouns sometimes get dropped because verbs already show “who,” but learners must know them to understand and speak correctly.</p>
 
-    <h2>2. Grammar Focus – Adjectives + <em>What is that?</em></h2>
-    <p><strong>Adjective Agreement</strong>: Adjectives match the noun’s gender and number and follow the noun.</p>
-    <table border="1" cellpadding="5">
-      <tr><th>Article</th><th>Noun</th><th>Adjective</th><th>English</th></tr>
-      <tr><td>el</td><td>hotel</td><td>grande</td><td>the big hotel</td></tr>
-      <tr><td>la</td><td>maleta</td><td>bonita</td><td>the pretty suitcase</td></tr>
-      <tr><td>los</td><td>hoteles</td><td>grandes</td><td>the big hotels</td></tr>
-      <tr><td>las</td><td>maletas</td><td>bonitas</td><td>the pretty suitcases</td></tr>
+    <h3>2. Pronouns Table</h3>
+    <table>
+      <tr><th>English</th><th>Spanish</th></tr>
+      <tr><td>I</td><td>yo</td></tr>
+      <tr><td>you (informal)</td><td>tú</td></tr>
+      <tr><td>he</td><td>él</td></tr>
+      <tr><td>she</td><td>ella</td></tr>
+      <tr><td>we (masc / mixed)</td><td>nosotros</td></tr>
+      <tr><td>we (fem)</td><td>nosotras</td></tr>
+      <tr><td>you all (Spain, masc / mixed)</td><td>vosotros</td></tr>
+      <tr><td>you all (Spain, fem)</td><td>vosotras</td></tr>
+      <tr><td>you all (LatAm)</td><td>ustedes</td></tr>
+      <tr><td>they (masc / mixed)</td><td>ellos</td></tr>
+      <tr><td>they (fem)</td><td>ellas</td></tr>
     </table>
-
-    <p><strong>Adjectives:</strong></p>
+    <p><strong>Key Notes:</strong></p>
     <ul>
-      <li><em>grande</em> – big</li>
-      <li><em>pequeño/pequeña</em> – small</li>
-      <li><em>bonito/bonita</em> – pretty</li>
-      <li><em>feo/fea</em> – ugly</li>
-      <li><em>nuevo/nueva</em> – new</li>
-      <li><em>viejo/vieja</em> – old</li>
+      <li><em>tú</em> is informal; <em>usted</em> is formal (we’ll cover later).</li>
+      <li>Spain uses <em>vosotros/vosotras</em>, but in Latin America, <em>ustedes</em> is used for “you all.”</li>
     </ul>
 
-    <p><strong>¿Qué es eso?</strong> – “What is that?”</p>
-    <p><em>Example:</em> ¿Qué es eso? → <em>Es una maleta bonita.</em></p>
+    <h3>3. Listening & Repeat</h3>
+    <p>You say each pronoun, student repeats. E.g., “yo… tú… él… ella… nosotros…”</p>
 
-    <h2>3. Vocabulary – No New Nouns</h2>
+    <h3>4. Vocabulary in Context (Travel)</h3>
     <ul>
-      <li>Reuse: <em>el hotel, la playa, la maleta, la cerveza, la habitación</em>.</li>
-      <li>New question: <em>¿Qué es eso?</em></li>
+      <li><strong>Yo</strong> tengo un pasaporte. (I have a passport.)</li>
+      <li><strong>Tú</strong> tienes la maleta. (You have the suitcase.)</li>
+      <li><strong>Él</strong> tiene un taxi. (He has a taxi.)</li>
+      <li><strong>Ella</strong> tiene la habitación. (She has the room.)</li>
+      <li><strong>Nosotros</strong> tenemos las vacaciones. (We have the holidays.)</li>
     </ul>
 
-    <h2>4. Listening Prompt (You Provide)</h2>
-    <p><strong>Transcript:</strong></p>
+    <h3>5. Reading Exercise</h3>
+    <p>Match the pronoun to the person:</p>
     <ul>
-      <li><em>El hotel grande. La maleta pequeña. Las cervezas frías.</em></li>
-      <li>Ask: <em>¿Qué es eso?</em> → Pause → <em>Es una playa bonita.</em></li>
+      <li>yo → (picture of you)</li>
+      <li>ella → (picture of a woman)</li>
+      <li>nosotros → (group of friends)</li>
     </ul>
 
-    <h2>5. Reading + Matching Task</h2>
+    <h3>6. Speaking Prompt</h3>
+    <p>Practice questions:</p>
     <ul>
-      <li>Match: <em>una playa bonita</em>, <em>un hotel grande</em>, <em>una maleta pequeña</em></li>
-      <li>Identify: article, noun, adjective in <em>la cerveza fría</em>.</li>
+      <li>¿Quién tiene el pasaporte? → Yo tengo el pasaporte.</li>
+      <li>¿Quién tiene la maleta? → Ella tiene la maleta.</li>
+      <li>¿Quién tiene un taxi? → Él tiene un taxi.</li>
     </ul>
 
-    <h2>6. Speaking Prompt</h2>
+    <h3>7. Optional Writing Practice</h3>
+    <p>Translate into Spanish:</p>
     <ul>
-      <li>You say: <em>¿Qué es eso?</em> (point to hotel) → Student: <em>Es un hotel grande.</em></li>
-      <li>You say: “Describe a suitcase.” → Student: <em>Es una maleta nueva.</em></li>
+      <li>We have the hotel. → Nosotros tenemos el hotel.</li>
+      <li>They (fem) have the beach. → Ellas tienen la playa.</li>
+      <li>You (informal) have the beer. → Tú tienes la cerveza.</li>
     </ul>
 
-    <h2>7. Writing Practice</h2>
-    <p>Translate:</p>
-    <ul>
-      <li>The pretty beach → <em>La playa bonita</em></li>
-      <li>A big hotel → <em>Un hotel grande</em></li>
-      <li>The new suitcases → <em>Las maletas nuevas</em></li>
-      <li>What is that? It’s an ugly taxi. → <em>¿Qué es eso? Es un taxi feo.</em></li>
-    </ul>
+    <h3>8. Recap Challenge</h3>
+    <p>Hold up a flashcard or object (e.g., suitcase). Student says a sentence with the correct pronoun:</p>
+    <p><em>“Yo tengo la maleta.” / “Ella tiene la maleta.”</em></p>
 
-    <h2>8. Recap Challenge (Speaking)</h2>
-    <p>You show images (e.g., beach, beer). Student says: <em>Es una playa bonita</em>, etc.</p>
-
-    <h2>All the Words You Now Know in Spanish</h2>
-    <table border="1" cellpadding="5">
+    <h3>All the Words You Now Know in Spanish</h3>
+    <table>
       <tr><th>Spanish</th><th>English</th><th>Notes</th></tr>
-      <tr><td>(Day 1 vocab retained)</td><td></td><td></td></tr>
-      <tr><td>grande</td><td>big</td><td>same for masc/fem</td></tr>
-      <tr><td>pequeño/pequeña</td><td>small</td><td>adj. changes with gender</td></tr>
-      <tr><td>bonito/bonita</td><td>pretty</td><td>adj. changes with gender</td></tr>
-      <tr><td>feo/fea</td><td>ugly</td><td>adj. changes with gender</td></tr>
-      <tr><td>nuevo/nueva</td><td>new</td><td>adj. changes with gender</td></tr>
-      <tr><td>viejo/vieja</td><td>old</td><td>adj. changes with gender</td></tr>
-      <tr><td>frío/fría</td><td>cold</td><td>adj. changes with gender</td></tr>
-      <tr><td>¿qué?</td><td>what</td><td>question word</td></tr>
-      <tr><td>es</td><td>is</td><td>irregular from ser</td></tr>
-      <tr><td>eso</td><td>that</td><td>demonstrative</td></tr>
-      <tr><td>¿qué es eso?</td><td>what is that?</td><td>full phrase</td></tr>
-      <tr><td>es un…</td><td>it is a… (masc)</td><td>phrase</td></tr>
-      <tr><td>es una…</td><td>it is a… (fem)</td><td>phrase</td></tr>
+      <tr><td>yo</td><td>I</td><td></td></tr>
+      <tr><td>tú</td><td>you (informal)</td><td></td></tr>
+      <tr><td>él</td><td>he</td><td>with accent</td></tr>
+      <tr><td>ella</td><td>she</td><td></td></tr>
+      <tr><td>nosotros</td><td>we (masc/mixed)</td><td></td></tr>
+      <tr><td>nosotras</td><td>we (fem)</td><td></td></tr>
+      <tr><td>vosotros/vosotras</td><td>you all (Spain)</td><td>informal</td></tr>
+      <tr><td>ustedes</td><td>you all</td><td>formal (Spain), all-purpose (LatAm)</td></tr>
+      <tr><td>ellos</td><td>they (masc/mixed)</td><td></td></tr>
+      <tr><td>ellas</td><td>they (fem)</td><td></td></tr>
     </table>
   </div>
 </body>
