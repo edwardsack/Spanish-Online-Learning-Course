@@ -3,142 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spanish Online Learning Course - Lesson 1</title>
+  <title>Lesson 1 - Articles</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url("background.jpg") no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #333;
+      color: #000;
     }
-
-    nav {
-      background-color: red;
+    header {
+      background-color: rgba(255, 0, 0, 0.85);
+      padding: 10px;
       display: flex;
-      justify-content: flex-end;
       align-items: center;
-      padding: 5px 20px;
-      height: 50px;
       position: relative;
-      z-index: 2;
     }
-
-    nav .logo {
-      height: 140px;
-      margin-left: 40px;
-      margin-top: 40px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      margin-right: 40px;
-    }
-
-    .dropbtn {
-      background-color: red;
-      color: white;
-      font-weight: bold;
-      padding: 10px 15px;
-      font-size: 16px;
-      border: none;
+    header img {
+      height: 80px;
+      margin-right: 20px;
       cursor: pointer;
     }
-
-    .dropdown-content {
+    nav {
+      margin-left: auto;
+      position: relative;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      position: relative;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
+    nav ul ul {
       display: none;
       position: absolute;
-      right: 0;
-      background-color: #f9f9f9;
-      min-width: 200px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 6px;
-      z-index: 1;
+      top: 100%;
+      left: 0;
+      background-color: rgba(255, 0, 0, 0.9);
+      min-width: 180px;
     }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
+    nav ul ul li {
       display: block;
     }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-      background-color: darkred;
-    }
-
-    .content {
+    .content-box {
       background-color: yellow;
       max-width: 900px;
-      margin: 60px auto;
+      margin: 40px auto;
       padding: 20px;
       border-radius: 10px;
-      opacity: 0.95;
     }
-
-    h1, h2 {
-      color: red;
-    }
-
     table {
-      width: 100%;
       border-collapse: collapse;
+      width: 100%;
       margin: 15px 0;
     }
-
     table, th, td {
       border: 1px solid black;
       padding: 8px;
       text-align: center;
     }
-
-    th {
-      background-color: #f2f2f2;
-    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">
-      <img src="logo.png" alt="Logo" class="logo">
-    </a>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="#">Navigation Menu</a>
+          <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="lesson1.html">Lesson 1</a></li>
+            <li><a href="lesson2.html">Lesson 2</a></li>
+            <li><a href="lesson3.html">Lesson 3</a></li>
+            <li><a href="lesson4.html">Lesson 4</a></li>
+            <li><a href="lesson5.html">Lesson 5</a></li>
+            <li><a href="lesson6.html">Lesson 6</a></li>
+            <li><a href="lesson7.html">Lesson 7</a></li>
+            <li><a href="lesson8.html">Lesson 8</a></li>
+            <li><a href="lesson9.html">Lesson 9</a></li>
+            <li><a href="lesson10.html">Lesson 10</a></li>
+            <li><a href="lesson11.html">Lesson 11</a></li>
+            <li><a href="lesson12.html">Lesson 12</a></li>
+            <li><a href="lesson13.html">Lesson 13</a></li>
+            <li><a href="lesson14.html">Lesson 14</a></li>
+            <li><a href="lesson15.html">Lesson 15</a></li>
+            <li><a href="lesson16.html">Lesson 16</a></li>
+            <li><a href="lesson17.html">Lesson 17</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="dropdown">
-      <button class="dropbtn">Navigation Menu</button>
-      <div class="dropdown-content">
-        <a href="index.html">Introduction</a>
-        <a href="lesson1.html">Lesson 1</a>
-        <a href="lesson2.html">Lesson 2</a>
-        <a href="lesson3.html">Lesson 3</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="content">
+  <div class="content-box">
     <h1>Day 1: Articles — Your First Step to Speaking Spanish with Confidence</h1>
-    <p><b>Estimated Time:</b> 30 minutes</p>
-    <p><b>Objective:</b> Understand and use Spanish definite and indefinite articles in real travel situations.</p>
+    <p><strong>Estimated Time:</strong> 30 minutes</p>
+    <p><strong>Objective:</strong> Understand and use Spanish definite and indefinite articles in real travel situations.</p>
 
-    <h2>1. Intro Video Placeholder (You)</h2>
+    <h3>1. Intro Video Placeholder (You)</h3>
     <ul>
       <li>Explain what articles are, how they differ from English, and why we start here.</li>
       <li>Emphasize that every sentence begins with knowing the “what” and “how many.”</li>
     </ul>
 
-    <h2>2. Grammar Focus – Articles: "The" and "A"</h2>
+    <h3>2. Grammar Focus – Articles: "The" and "A"</h3>
     <table>
       <tr><th>English</th><th>Spanish (Singular)</th><th>Spanish (Plural)</th></tr>
       <tr><td>the (masculine)</td><td>el hotel</td><td>los hoteles</td></tr>
@@ -146,14 +127,14 @@
       <tr><td>a / an (masculine)</td><td>un taxi</td><td>unos taxis</td></tr>
       <tr><td>a / an (feminine)</td><td>una cerveza</td><td>unas cervezas</td></tr>
     </table>
-    <p><b>Key Rule:</b> Articles match the gender (masculine/feminine) and number (singular/plural) of the noun.</p>
+    <p><strong>Key Rule:</strong> Articles match the gender (masculine/feminine) and number (singular/plural) of the noun.</p>
     <ul>
-      <li><i>el hotel</i> ✅ (masculine, singular)</li>
-      <li><i>las playas</i> ✅ (feminine, plural)</li>
+      <li><em>el hotel</em> ✅ (masculine, singular)</li>
+      <li><em>las playas</em> ✅ (feminine, plural)</li>
     </ul>
-    <p><b>Mini-Rule:</b> Most nouns ending in <i>-o</i> are masculine, <i>-a</i> are feminine, but exceptions exist (e.g., <i>el mapa</i>).</p>
+    <p><strong>Mini-Rule:</strong> Most nouns ending in <em>-o</em> are masculine, <em>-a</em> are feminine, but exceptions exist (e.g., <em>el mapa</em>).</p>
 
-    <h2>3. Vocabulary List – Travel Nouns (10)</h2>
+    <h3>3. Vocabulary List – Travel Nouns (10)</h3>
     <table>
       <tr><th>Spanish</th><th>English</th></tr>
       <tr><td>el hotel</td><td>the hotel</td></tr>
@@ -167,45 +148,45 @@
       <tr><td>los billetes</td><td>the tickets</td></tr>
       <tr><td>las vacaciones</td><td>the holidays/vacation</td></tr>
     </table>
-    <p><b>Tip:</b> Memorize nouns with their article to learn gender.</p>
+    <p><strong>Tip:</strong> Memorize nouns with their article to learn gender.</p>
 
-    <h2>4. Listening Prompt (You Provide)</h2>
-    <p><b>Transcript for your audio:</b></p>
+    <h3>4. Listening Prompt (You Provide)</h3>
+    <p><strong>Transcript:</strong> Say: “el hotel,” “la playa,” “una cerveza,” etc. Then ask: “¿Una habitación?” → Pause for student to repeat: Una habitación.</p>
+    <p><strong>Goal:</strong> Associate article + noun by ear and repeat confidently.</p>
+
+    <h3>5. Reading + Identification Exercise</h3>
+    <p>Match the Spanish to the image:</p>
     <ul>
-      <li>Say: <i>“el hotel,” “la playa,” “una cerveza,”</i> etc.</li>
-      <li>Ask: <i>“¿Una habitación?”</i> → Pause for student to repeat: <i>Una habitación.</i></li>
+      <li>el hotel</li>
+      <li>la playa</li>
+      <li>una cerveza</li>
+      <li>el taxi</li>
+      <li>la maleta</li>
     </ul>
-    <p><b>Goal:</b> Associate article + noun by ear and repeat confidently.</p>
 
-    <h2>5. Reading + Identification Exercise</h2>
+    <h3>6. Speaking Prompt</h3>
+    <p><strong>Simulated Hotel Check-In:</strong></p>
     <ul>
-      <li>Match the Spanish to the image: <i>el hotel, la playa, una cerveza, el taxi, la maleta</i></li>
+      <li>¿Una habitación? → Una habitación.</li>
+      <li>¿El pasaporte? → El pasaporte.</li>
+      <li>¿Una maleta? → Una maleta.</li>
+      <li>¿El hotel? → El hotel.</li>
     </ul>
 
-    <h2>6. Speaking Prompt</h2>
-    <p><b>Simulated Hotel Check-In:</b></p>
-    <ul>
-      <li><i>¿Una habitación?</i> → <i>Una habitación.</i></li>
-      <li><i>¿El pasaporte?</i> → <i>El pasaporte.</i></li>
-      <li><i>¿Una maleta?</i> → <i>Una maleta.</i></li>
-      <li><i>¿El hotel?</i> → <i>El hotel.</i></li>
-    </ul>
-    <p><b>Goal:</b> Practice pronunciation and article + noun structure.</p>
-
-    <h2>7. Optional Writing Practice</h2>
+    <h3>7. Optional Writing Practice</h3>
     <p>Translate to Spanish:</p>
     <ul>
-      <li>The beach → <i>La playa</i></li>
-      <li>A beer → <i>Una cerveza</i></li>
-      <li>The tickets → <i>Los billetes</i></li>
-      <li>A suitcase → <i>Una maleta</i></li>
-      <li>The holidays → <i>Las vacaciones</i></li>
+      <li>The beach → La playa</li>
+      <li>A beer → Una cerveza</li>
+      <li>The tickets → Los billetes</li>
+      <li>A suitcase → Una maleta</li>
+      <li>The holidays → Las vacaciones</li>
     </ul>
 
-    <h2>8. Recap Challenge (Speaking)</h2>
-    <p>You hold up photos/flashcards (e.g., beach, hotel). Student responds aloud with correct article + noun (e.g., <i>la playa</i>).</p>
+    <h3>8. Recap Challenge (Speaking)</h3>
+    <p>You hold up photos/flashcards (e.g., beach, hotel). Student responds aloud with correct article + noun (e.g., <em>la playa</em>).</p>
 
-    <h2>All the Words You Now Know in Spanish</h2>
+    <h3>All the Words You Now Know in Spanish</h3>
     <table>
       <tr><th>Spanish</th><th>English</th><th>Notes</th></tr>
       <tr><td>el</td><td>the (masc sg)</td><td>definite article</td></tr>
