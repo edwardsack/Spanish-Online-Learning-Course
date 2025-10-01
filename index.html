@@ -3,144 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spanish Online Learning Course - Introduction</title>
+  <title>Spanish Online Learning Course</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: url("background.jpg") no-repeat center center fixed;
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #333;
+      color: red;
     }
 
     nav {
-      background-color: red;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 5px 20px;
-      height: 50px;
+      background: darkred;
+      padding: 10px;
       position: relative;
-      z-index: 2;
     }
 
-    nav .logo {
-      height: 140px;     
-      margin-left: 40px; 
-      margin-top: 40px;  
+    nav button {
+      background: yellow;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      position: absolute;
+      background: darkred;
+      top: 50px;
+      left: 10px;
+      border-radius: 8px;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: yellow;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+
+    nav ul li a:hover {
+      background: red;
+    }
+
+    nav:hover ul {
+      display: block;
+    }
+
+    .logo {
+      height: 140px;
+      margin-left: 40px;
+      margin-top: 40px;
       position: absolute;
       top: 0;
       left: 0;
     }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      margin-right: 40px;
-    }
 
-    .dropbtn {
-      background-color: red;
-      color: white;
-      font-weight: bold;
-      padding: 10px 15px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      right: 0;
-      background-color: #f9f9f9;
-      min-width: 200px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-      border-radius: 6px;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-      background-color: darkred;
-    }
     .content {
-      background-color: yellow;
+      background: yellow;
       max-width: 800px;
-      margin: 60px auto;
+      margin: 200px auto 20px auto;
       padding: 20px;
-      border-radius: 10px;
-      opacity: 0.95;
-    }
-
-    h1, h2 {
-      color: red;
-    }
-
-    .dropdown-content.show {
-      display: block;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <nav>
   <a href="index.html">
-  <img src="logo.png" alt="Logo" class="logo">
-</a>
+    <img src="logo.png" alt="Logo" class="logo">
+  </a>
 
-    <div class="dropdown">
-      <button class="dropbtn" onclick="toggleMenu()">Navigation Menu</button>
-      <div class="dropdown-content" id="menuContent">
-        <a href="index.html">Introduction</a>
-        <a href="lesson1.html">Lesson 1</a>
-        <a href="lesson2.html">Lesson 2</a>
-        <a href="lesson3.html">Lesson 3</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
+  <nav>
+    <button>Navigation Menu</button>
+    <ul>
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="lesson1.html">Lesson 1</a></li>
+      <li><a href="lesson2.html">Lesson 2</a></li>
+      <li><a href="lesson3.html">Lesson 3</a></li>
+      <li><a href="lesson4.html">Lesson 4</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
   </nav>
 
-  <!-- First yellow box: intro -->
   <div class="content">
-    <h1>Welcome to Your Spanish Online Learning Course</h1>
-    <p>This course is designed to give you practical Spanish for real travel situations.  
-    Each lesson is short, interactive, and focused on everyday words and phrases you’ll actually use.  
-    Start with Lesson 1 in the Navigation Menu to begin your journey!</p>
-  </div>
-  <div class="content">
-    <h2>Why this Course? </h2>
-    <p>Travelling to Spain or a spanish speaking country for a holiday, business trip or moving there can be a difficult experience - especially if you do not speak Spanish! This short but rich in knowledge course goes over the basic grammar rules, simple vocab and conjugations for you to get a head start prior to your trip!</p>
+    <h1>Welcome to Learning Spanish Online 👋</h1>
+    <p>
+      Learning Spanish can be difficult and takes time and dedication to reach a high level,
+      but do not worry, in this simple and easy-to-navigate course, your Spanish level will
+      improve in just a few lessons!
+    </p>
   </div>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("menuContent").classList.toggle("show");
-    }
-
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-  </script>
+  <div class="content">
+    <h2>More Content Coming Soon</h2>
+    <p>This section is reserved for future updates and resources.</p>
+  </div>
 </body>
 </html>
